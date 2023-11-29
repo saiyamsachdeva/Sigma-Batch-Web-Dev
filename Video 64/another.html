@@ -1,0 +1,49 @@
+// Adjectives:
+// Crazy 
+// Amazing
+// Fire 
+
+// Shop name:
+// Engine
+// Foods
+// Garments
+
+// Another Word:
+// Bros
+// Limited
+// Hub
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ob1 = {
+            1 : "Crazy",
+            2 : "Amazing",
+            0 : "Fire"
+        }
+        let ob2 = {
+            0 : "Engine",
+            1 : "Foods",
+            2 : "Garments"
+        }
+        let ob3 = {
+            1 : "Bros",
+            2 : "Limited",
+            0 : "Hub",
+        }
+        let r1 = Math.floor(Math.random() * 3)
+        console.log(`value of r1 is: ${r1}`)
+        let r2 = Math.floor(Math.random() * 3)
+        console.log(`value of r2 is: ${r2}`)
+        let r3 = Math.floor(Math.random() * 3)
+        console.log(`value of r3 is: ${r3}`)
+        let str = ob1[r1] + " " + ob2[r2] + " " + ob3[r3]
+        console.log(str)
+    </script>
+</body>
+</html>
