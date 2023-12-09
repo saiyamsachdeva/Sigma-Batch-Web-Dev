@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box" style = "display: flex;" data-createdby="saimmy" data-conceptedby="saimmmm">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <script>
+            // let div = document.createElement("div");
+            // div.innerHTML = "I have been inserted <b>by Saiyam </b>"
+            // div.setAttribute("class","created");
+            // document.querySelector(".container").prepend(div); 
+            let cont = document.querySelector(".container");
+            cont.insertAdjacentHTML("afterend","<b> This is the appended Text</b>");
+            // document.querySelector("container").classList.add("red"); ->the class is added is added only once.
+            // document.querySelector("container").classList.remove("bg-green");
+            // document.querySelector("container").classList.toggle("red")->if color is not red then turn  red if red then remove red color;
+        </script>
+    </div>
+</body>
+</html>
